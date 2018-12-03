@@ -1,0 +1,27 @@
+{
+  "main": "",
+  "name": "js-es2017",
+  "version": "0.0.1",
+  "description": "",
+  "author": {},
+  "keywords": [],
+  "scripts": {
+    "start": "innocentia run",
+    "build": "innocentia build",
+    "watch": "innocentia watch",
+    "test": "innocentia test"
+  },
+  "bin": {},
+  "innocentia": {},
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.87.0",
+    "flow-typed": "^2.5.1",
+    "innocentia": "^0.1.2",
+    "webpack": "^4.26.1"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "builders": [
+    "copy",
+    "webpack"
+  ],
+  "opt": [],
+  "target": "browser",
+  "entries": [
+    {
+      "src": "src\\index.html",
+      "type": "copy",
+      "opts": {}
+    },
+    {
+      "src": "src\\index.js",
+      "type": "web",
+      "opts": {}
+    }
+  ],
+  "directories": {
+    "source": "src",
+    "destination": "build"
+  },
+  "testers": {
+    "ava": "./node_modules/.bin/ava",
+    "flow": "./node_modules/.bin/flow"
+  },
+  "webpack": {
+    "rules": [
+      {
+        "test": "\\.jsx?$",
+        "use": [
+          {
+            "loader": "babel-loader",
+            "options": {
+              "sourceMap": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
